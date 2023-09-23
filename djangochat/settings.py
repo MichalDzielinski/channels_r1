@@ -22,6 +22,7 @@ LOGIN_REDIRECT_URL='/rooms/'
 LOGIN_URL='/login/'
 
 INSTALLED_APPS = [
+    'daphne',
     'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -35,6 +36,12 @@ INSTALLED_APPS = [
     'core',
     'room',
 ]
+
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels.layers.InMemoryChannelLayer'
+    }
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
