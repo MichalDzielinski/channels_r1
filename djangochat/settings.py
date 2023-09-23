@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     'channels',
     #custom apps
     'core',
+    'room',
 ]
 
 MIDDLEWARE = [
