@@ -17,6 +17,10 @@ ASGI_APPLICATION = 'djangochat.asgi.application'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #endregion
 
+LOGOUT_REDIRECT_URL='/'
+LOGIN_REDIRECT_URL='/rooms/'
+LOGIN_URL='/login/'
+
 INSTALLED_APPS = [
     'jazzmin',
     'django.contrib.admin',
